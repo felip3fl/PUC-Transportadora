@@ -1,6 +1,5 @@
 package a.transportadora;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -16,6 +15,8 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
+
+@SuppressWarnings("serial")
 public class JanelaCalculoDiasTransporte extends JFrame implements ActionListener {
 
 	private JPanel contentPane;
