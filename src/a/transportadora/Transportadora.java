@@ -12,7 +12,7 @@ public class Transportadora {
 	public void setCapacidadeDiariaTransporte(int capacidadeDiariaTransporte) throws Exception {
 		
 		if(capacidadeDiariaTransporte < 1){
-			throw new Exception("Capacidade não permitida");
+			throw new Exception("Capacidade nï¿½o permitida");
 		}else{
 			this.capacidadeDiariaTransporte = capacidadeDiariaTransporte;
 		}		
