@@ -21,7 +21,6 @@ public class Transportadora {
 	public int calculoDiasTransporte(int cargaTransporte){
 		
 		int dias = 0;
-		//int numeroMaximoCaminhao = 2;
 		int totalTransportado = 0;
 
 		while(totalTransportado < cargaTransporte){
@@ -36,7 +35,6 @@ public class Transportadora {
 				frota.adiciona(caminhao1);
 			}else{ 
 				Caminhao caminhao1 = new Caminhao(capacidadeDiariaTransporte );
-				Caminhao caminhao1 = new Caminhao(capacidadeDiariaTransporte );
 				Caminhao caminhao2 = new Caminhao(capacidadeDiariaTransporte);
 				frota.adiciona(caminhao1);
 				frota.adiciona(caminhao2);
@@ -48,6 +46,26 @@ public class Transportadora {
 		
 		
 		return dias;
+	}
+
+	public int calculo2DiasTransporte(int cargaTransporte){
+		
+		int dias = 0;
+		int aux = 0;
+
+		Frota frota = new Frota();
+		
+		Caminhao caminhao1 = new Caminhao(capacidadeDiariaTransporte );
+		Caminhao caminhao2 = new Caminhao(capacidadeDiariaTransporte);
+		frota.adiciona(caminhao1);
+		frota.adiciona(caminhao2);
+		
+			
+		aux = cargaTransporte - frota.capacidadeTransporte();
+		dias = aux / (frota.capacidadeTransporte() / 2);
+		dias = 1 * dias ;
+		return dias;
+		
 	}
 	
 	

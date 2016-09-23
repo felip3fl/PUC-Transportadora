@@ -26,6 +26,7 @@ public class JanelaCalculoDiasTransporte extends JFrame implements ActionListene
 	private JTextField txtCargaTransporte;
 	private JButton btnCalcular;
 	private JLabel lblResultado;
+	private JLabel lblResultado2;
 
 	/**
 	 * Launch the application.
@@ -49,7 +50,7 @@ public class JanelaCalculoDiasTransporte extends JFrame implements ActionListene
 	public JanelaCalculoDiasTransporte() {
 		setTitle("Quantidade Dias Transporte - Teste de Software");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 379, 186);
+		setBounds(100, 100, 379, 198);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -68,26 +69,32 @@ public class JanelaCalculoDiasTransporte extends JFrame implements ActionListene
 		btnCalcular.addActionListener(this);
 		
 		lblResultado = new JLabel("New label");
+		
+		lblResultado2 = new JLabel("New label");
+		
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
 		gl_contentPane.setHorizontalGroup(
 			gl_contentPane.createParallelGroup(Alignment.LEADING)
 				.addGroup(gl_contentPane.createSequentialGroup()
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
-						.addGroup(gl_contentPane.createSequentialGroup()
+						.addGroup(Alignment.TRAILING, gl_contentPane.createSequentialGroup()
 							.addContainerGap()
 							.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
 								.addComponent(lblCapacidadeTransportepor)
 								.addComponent(lblCargaTransporte))
 							.addPreferredGap(ComponentPlacement.RELATED)
 							.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
-								.addComponent(txtCapacidade, GroupLayout.DEFAULT_SIZE, 134, Short.MAX_VALUE)
-								.addComponent(txtCargaTransporte, GroupLayout.DEFAULT_SIZE, 134, Short.MAX_VALUE)))
-						.addGroup(gl_contentPane.createSequentialGroup()
-							.addGap(207)
-							.addComponent(btnCalcular, GroupLayout.DEFAULT_SIZE, 134, Short.MAX_VALUE))
+								.addComponent(txtCapacidade, GroupLayout.DEFAULT_SIZE, 183, Short.MAX_VALUE)
+								.addComponent(txtCargaTransporte, GroupLayout.DEFAULT_SIZE, 183, Short.MAX_VALUE)))
 						.addGroup(Alignment.TRAILING, gl_contentPane.createSequentialGroup()
-							.addContainerGap(286, Short.MAX_VALUE)
-							.addComponent(lblResultado)))
+							.addGap(207)
+							.addComponent(btnCalcular, GroupLayout.DEFAULT_SIZE, 136, Short.MAX_VALUE))
+						.addGroup(Alignment.TRAILING, gl_contentPane.createSequentialGroup()
+							.addContainerGap(297, Short.MAX_VALUE)
+							.addComponent(lblResultado))
+						.addGroup(Alignment.TRAILING, gl_contentPane.createSequentialGroup()
+							.addContainerGap(297, Short.MAX_VALUE)
+							.addComponent(lblResultado2)))
 					.addContainerGap())
 		);
 		gl_contentPane.setVerticalGroup(
@@ -105,7 +112,9 @@ public class JanelaCalculoDiasTransporte extends JFrame implements ActionListene
 					.addComponent(btnCalcular)
 					.addPreferredGap(ComponentPlacement.UNRELATED)
 					.addComponent(lblResultado)
-					.addContainerGap(121, Short.MAX_VALUE))
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addComponent(lblResultado2)
+					.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
 		);
 		contentPane.setLayout(gl_contentPane);
 	}
@@ -129,7 +138,8 @@ public class JanelaCalculoDiasTransporte extends JFrame implements ActionListene
 				Transportadora transp = new Transportadora();
 				transp.setCapacidadeDiariaTransporte(capacidade);
 
-				lblResultado.setText("Será necessario " + transp.calculoDiasTransporte(carga) + " dias para transporta essa carga");
+				lblResultado.setText("São necessarios " + transp.calculoDiasTransporte(carga) + " dias para transporta essa carga");
+				lblResultado2.setText("Será necessario " + transp.calculo2DiasTransporte(carga) + " dias para transporta essa carga");
 				
 			}catch (Exception e) {
 				JOptionPane.showMessageDialog(null, e);
