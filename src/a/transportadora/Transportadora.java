@@ -36,7 +36,8 @@ public class Transportadora {
 				frota.adiciona(caminhao1);
 			}else{ 
 				Caminhao caminhao1 = new Caminhao(capacidadeDiariaTransporte );
-				Caminhao caminhao2 = new Caminhao(capacidadeDiariaTransporte );
+				Caminhao caminhao1 = new Caminhao(capacidadeDiariaTransporte );
+				Caminhao caminhao2 = new Caminhao(capacidadeDiariaTransporte);
 				frota.adiciona(caminhao1);
 				frota.adiciona(caminhao2);
 			}
