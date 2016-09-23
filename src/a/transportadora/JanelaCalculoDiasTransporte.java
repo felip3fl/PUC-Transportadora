@@ -139,7 +139,7 @@ public class JanelaCalculoDiasTransporte extends JFrame implements ActionListene
 				transp.setCapacidadeDiariaTransporte(capacidade);
 
 				lblResultado.setText("São necessarios " + transp.calculoDiasTransporte(carga) + " dias para transporta essa carga");
-				lblResultado2.setText("Será necessario " + transp.calculo2DiasTransporte(carga) + " dias para transporta essa carga");
+				lblResultado2.setText("São necessario " + transp.calculo2DiasTransporte(carga) + " dias para transporta essa carga");
 				
 			}catch (Exception e) {
 				JOptionPane.showMessageDialog(null, e);

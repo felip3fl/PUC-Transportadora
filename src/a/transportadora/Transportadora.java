@@ -55,12 +55,11 @@ public class Transportadora {
 
 		Frota frota = new Frota();
 		
-		Caminhao caminhao1 = new Caminhao(capacidadeDiariaTransporte );
+		Caminhao caminhao1 = new Caminhao(capacidadeDiariaTransporte);
 		Caminhao caminhao2 = new Caminhao(capacidadeDiariaTransporte);
 		frota.adiciona(caminhao1);
 		frota.adiciona(caminhao2);
 		
-			
 		aux = cargaTransporte - frota.capacidadeTransporte();
 		dias = aux / (frota.capacidadeTransporte() / 2);
 		dias = 1 * dias ;
