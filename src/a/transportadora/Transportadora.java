@@ -21,6 +21,7 @@ public class Transportadora {
 	public int calculoDiasTransporte(int cargaTransporte){
 		
 		int dias = 0;
+		//int numeroMaximoCaminhao = 2;
 		int totalTransportado = 0;
 
 		while(totalTransportado < cargaTransporte){
