@@ -1,15 +1,8 @@
-<h3 align="center"> <img src="https://user-images.githubusercontent.com/20684484/236540911-0fbb94e1-edca-4a78-b70c-c703b1df65ae.png" width="400px" align="center" ><BR><BR>TRANSPORTADORA</h3>
-
-<h4 align="center">
-:construction:  Projeto usado para estudo, forever em construção  :construction:
-</h4>
-
-<h3 align="center">
-<img src="https://img.shields.io/badge/STATUS-FINALIZADO-blue">
-<img src="https://img.shields.io/badge/PROJECT%20VERSION-0.0.0-yellow">
+<h3 align="center"> <img src="https://user-images.githubusercontent.com/20684484/236540911-0fbb94e1-edca-4a78-b70c-c703b1df65ae.png" width="400px" align="center" ><BR><BR>TRANSPORTADORA<BR><BR>
+<img src="https://img.shields.io/badge/STATUS-FINALIZADO-3474af">
+<img src="https://img.shields.io/badge/PROJECT%20VERSION-0.0.0-e8c204">
+<BR><BR>
 </h3>
-
-<BR>
 
 ## 📃 Descrição do projeto
 
